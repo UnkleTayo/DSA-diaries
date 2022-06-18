@@ -23,4 +23,9 @@ function isPowerOfTwo(n) {
   return true;
 }
 
-console.log(isPowerOfTwo(69));
+function bitwiseIsPowerOfTwo(n) {
+  if (n < 1) return false;
+  return (n & (n - 1)) === 0;
+}
+
+// Big 0
