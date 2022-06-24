@@ -1,5 +1,6 @@
 function amendTheSentence(s) {
   let parts = s.split(/(?=[A-Z])/);
+
   return parts
     .map((e) => {
       return e.toLowerCase();
@@ -14,4 +15,3 @@ var res = str
   .replace(/[A-Z][^A-Z]*/g, (word) => word + ' ')
   .trim()
   .toLowerCase();
-console.log(res);
