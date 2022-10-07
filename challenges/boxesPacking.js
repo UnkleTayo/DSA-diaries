@@ -1,5 +1,5 @@
 function boxesPacking(length, width, height) {
-  var isPosible = true;
+  var isPossible = true;
   for (var i = 0; i < length.length; i++) {
     for (var j = 0; j < length.length; j++) {
       if (i === j) {
@@ -45,16 +45,16 @@ function boxesPacking(length, width, height) {
             height[i] > length[j])
         )
       ) {
-        isPosible = false;
+        isPossible = false;
       }
 
-      if (!isPosible) {
+      if (!isPossible) {
         break;
       }
     }
-    if (!isPosible) {
+    if (!isPossible) {
       break;
     }
   }
-  return isPosible;
+  return isPossible;
 }
